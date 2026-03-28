@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(132, 132, 221);
+    font-family: Georgia, serif;
+    color: #2c2c2a;
+}
+
+h1 {
+    font-size: 2rem;
+}
+p {
+    color: #888780;
+}
