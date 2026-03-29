@@ -1,12 +1,25 @@
+:root {
+  --cor-principal: #b3e2f7;
+  --cor-secundaria: #C8A2C8;
+  --cor-contraste: #1a1a2e;
+}
+
 body {
-    background-color: rgb(132, 132, 221);
-    font-family: Georgia, serif;
-    color: #2c2c2a;
+  background-color: var(--cor-principal);
+  font-family: 'Poppins', sans-serif;
+  color: var(--cor-contraste);
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
+  color: var(--cor-contraste);
 }
+
 p {
-    color: #888780;
+  color: var(--cor-contraste);
+}
+
+nav a {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-contraste);
 }
