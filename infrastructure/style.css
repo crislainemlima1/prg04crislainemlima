@@ -10,6 +10,10 @@ body {
   color: var(--cor-contraste);
 }
 
+header h1 {
+  color: white;
+}
+
 h1 {
   font-size: 2rem;
   color: var(--cor-contraste);
@@ -19,7 +23,49 @@ p {
   color: var(--cor-contraste);
 }
 
-nav a {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-contraste);
+header {
+  background-color: var(--cor-contraste);
+  color: white;
+  padding: 2rem;
+    text-align: center;
 }
+
+header p {
+color: var(--cor-principal);
+}
+
+nav {
+    background-color: var(--cor-secundaria);
+    padding: 1rem 2 rem;
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+  color: var(--cor-contraste);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px
+}
+
+nav a:hover {
+  background-color: var(--cor-principal);
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: var(--cor-contraste);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+
+
+
+
+
