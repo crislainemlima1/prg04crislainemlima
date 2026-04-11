@@ -1,28 +1,35 @@
+
+/* Variáveis globais de cores do projeto */
 :root {
   --cor-principal: #b3e2f7;
   --cor-secundaria: #C8A2C8;
   --cor-contraste: #1a1a2e;
 }
 
+/*estilo base da pagina*/
 body {
   background-color: var(--cor-principal);
   font-family: 'Poppins', sans-serif;
   color: var(--cor-contraste);
 }
 
+/* Título do header em branco para contrastar com fundo escuro */
 header h1 {
   color: white;
 }
 
+/* Tamanho e cor padrão de todos os títulos h1 */
 h1 {
   font-size: 2rem;
   color: var(--cor-contraste);
 }
 
+/* Cor padrão de todos os parágrafos */
 p {
   color: var(--cor-contraste);
 }
 
+/* Estilo do cabeçalho da página */
 header {
   background-color: var(--cor-contraste);
   color: white;
@@ -30,16 +37,20 @@ header {
     text-align: center;
 }
 
+/* Parágrafo do header com cor principal */
 header p {
 color: var(--cor-principal);
 }
 
+/* Barra de navegação com flexbox para alinhar links lado a lado */
 nav {
     background-color: var(--cor-secundaria);
     padding: 1rem 2 rem;
     display: flex;
     gap: 1rem;
 }
+
+/* Estilo dos links do menu */
 nav a {
   color: var(--cor-contraste);
   text-decoration: none;
@@ -48,20 +59,70 @@ nav a {
   border-radius: 8px
 }
 
+/* Efeito ao passar o mouse nos links */
 nav a:hover {
   background-color: var(--cor-principal);
 }
 
+/* Espaçamento interno do conteúdo principal */
 main {
   padding: 2rem;
 }
 
+/* Estilo do rodapé */
 footer {
   background-color: var(--cor-contraste);
   color: white;
   text-align: center;
   padding: 1rem;
   width: 100%;
+}
+
+/* Remove o estilo padrão da lista */
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  justify-content: center;
+}
+
+/* Estilo dos links do menu */
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  background-color: var(--cor-secundaria);
+}
+
+/* Efeito ao passar o mouse */
+#menu a:hover {
+  background-color: var(--cor-principal);
+  color: var(--cor-contraste);
+}
+
+/* Quando a tela for menor que 768px */
+@media (max-width: 600px) {
+
+  /* Menu vira coluna em vez de linha */
+  #menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Logo menor */
+  img {
+    width: 150px;
+  }
+
+  /* Título menor */
+  h1 {
+    font-size: 1.5rem;
+  }
+
 }
 
 
