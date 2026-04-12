@@ -69,6 +69,24 @@ main {
   padding: 2rem;
 }
 
+ /* Botão de login */
+main a {
+  display: inline-block;
+  background-color: var(--cor-contraste);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Efeito ao passar o mouse */
+main a:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-contraste);
+}
+
 /* Estilo do rodapé */
 footer {
   background-color: var(--cor-contraste);
@@ -123,8 +141,160 @@ footer {
     font-size: 1.5rem;
   }
 
+ 
 }
 
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+/* Cabeçalho da tabela */
+thead {
+  background-color: var(--cor-contraste);
+  color: white;
+}
+
+/* Células da tabela */
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--cor-secundaria);
+}
+
+/* Linhas alternadas para facilitar leitura */
+tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+/* Botão Editar */
+.btn-editar {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-contraste);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+/* Botão Excluir */
+.btn-excluir {
+  background-color: #e05555;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Efeito hover nos botões */
+.btn-editar:hover {
+  background-color: var(--cor-principal);
+}
+
+.btn-excluir:hover {
+  background-color: #c04040;
+  color: white;
+}
+
+/* Centraliza o formulário de login */
+#formLogin {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+/* Botão Entrar */
+#formLogin button[type="submit"] {
+  background-color: var(--cor-contraste);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+#formLogin button[type="submit"]:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-contraste);
+}
+
+/* Botão Esqueceu a senha */
+#formLogin button[type="button"] {
+  background-color: transparent;
+  color: var(--cor-contraste);
+  border: 1px solid var(--cor-contraste);
+  padding: 0.75rem;
+  border-radius: 8px;
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+#formLogin button[type="button"]:hover {
+  background-color: var(--cor-principal);
+}
+
+/* Inputs do formulário */
+#formLogin input {
+  padding: 0.75rem;
+  border: 1.5px solid var(--cor-secundaria);
+  border-radius: 9px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  width: 93%;
+  outline: none;
+  transition: border 0.2s;
+}
+
+/* Efeito ao clicar no input */
+#formLogin input:focus {
+  border-color: var(--cor-contraste);
+}
+
+/* Labels do formulário */
+#formLogin label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--cor-contraste);
+}
+
+/* Centraliza o botão esqueceu a senha */
+#formLogin button[type="button"] {
+  background-color: transparent;
+  color: var(--cor-contraste);
+  border: 1px solid var(--cor-contraste);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.rem;
+  text-align: center;
+}
 
 
 

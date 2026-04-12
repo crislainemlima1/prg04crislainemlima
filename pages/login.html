@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+     <!-- Folha de estilos externa -->
+    <link rel="stylesheet" href="../infrastructure/style.css">
+    <!-- Fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>FocusFlow</h1>
+        <p>Acesse sua conta</p>
+    </header>
+
+<main>
+    <form id="formLogin">
+        <label>E-mail</label>
+        <input type="email" id="email" required placeholder="Digite o seu e-mail"/>
+
+        <label>Senha</label>
+        <input type="password" id="password" required minlength="6" placeholder="Digite sua senha"/>
+
+        <p id="erro" style="color: red; display: none;"> Preencha todos os campos corretamente.</p>
+
+       <button type="submit">Entrar</button>
+
+       <button type="button" onclick="alert('Em breve! Funcionalidade não disponível.')">Esqueceu a senha?</button>
+       
+    </form>
+</main>
+
+ <script>
+        // Ao enviar o formulário, redireciona para o painel
+        document.getElementById("formLogin").addEventListener("submit", function(e) {
+            e.preventDefault(); // evita recarregar a página
+            window.location.href = "painel.html"; // redireciona para o painel
+        });
+    </script>
+
+    <footer>
+        <p>FocusFlow © 2026 — Programação Web</p>
+    </footer>
+</body>
+</html>
