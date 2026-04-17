@@ -9,6 +9,9 @@
     <!-- Fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <main>
         
     </main>
@@ -19,68 +22,52 @@
         <p>Gerenciamento de Usuários</p>
     </header>
     <main>
-        <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>E-mail</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>João Silva</td>
-                <td>joao@gmail.com</td>
-                <td>
-                   <button class="btn-editar">Editar</button>
-                   <button class="btn-excluir">Excluir</button>
-                </td>
-            </tr>
-             <tr>
-                <td>2</td>
-                <td>Cláudia Santos</td>
-                <td>claudia@gmail.com</td>
-                <td>
-                   <button class="btn-editar">Editar</button>
-                   <button class="btn-excluir">Excluir</button>
-                </td>
-            </tr>
+        <table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Status</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>João Silva</td>
+      <td>joao@gmail.com</td>
+      <td><span class="badge bg-success">Ativo</span></td>
+      <td><button class="btn btn-sm btn-warning">Editar</button> <button class="btn btn-sm btn-danger">Excluir</button></td>
+    </tr>
 
-             <tr>
-                <td>3</td>
-                <td>Maria Oliveira</td>
-                <td>maria@gmail.com</td>
-                <td>
-                   <button class="btn-editar">Editar</button>
-                   <button class="btn-excluir">Excluir</button>
-                </td>
-            </tr>
+     <tr>
+      <td>2</td>
+      <td>Maria Oliveira</td>
+      <td>maria@gmail.com</td>
+      <td><span class="badge bg-success">Ativo</span></td>
+      <td><button class="btn btn-sm btn-warning">Editar</button> <button class="btn btn-sm btn-danger">Excluir</button></td>
+    </tr>
 
-             <tr>
-                <td>4</td>
-                <td>Carlos Pereira</td>
-                <td>carlos@gmail.com</td>
-                <td>
-                   <button class="btn-editar">Editar</button>
-                   <button class="btn-excluir">Excluir</button>
-                </td>
-            </tr>
+     <tr>
+      <td>3</td>
+      <td>Pedro Santos</td>
+      <td>pedro@gmail.com</td>
+      <td><span class="badge bg-success">Ativo</span></td>
+      <td><button class="btn btn-sm btn-warning">Editar</button> <button class="btn btn-sm btn-danger">Excluir</button></td>
+    </tr>
 
-             <tr>
-                <td>5</td>
-                <td>Eduarda Costa</td>
-                <td>eduarda@gmail.com</td>
-                <td>
-                    <button class="btn-editar">Editar</button>
-                    <button class="btn-excluir">Excluir</button>
-                </td>
-            </tr>
+     <tr>
+      <td>4</td>
+      <td>Ana Costa</td>
+      <td>ana@gmail.com</td>
+      <td><span class="badge bg-success">Ativo</span></td>
+      <td><button class="btn btn-sm btn-warning">Editar</button> <button class="btn btn-sm btn-danger">Excluir</button></td>
+    </tr>
 
-
-        </tbody>
-    </table>
+  </tbody>
+</table>
+     <a href="index.html">Voltar para Home</a>
 </main>
     
     <footer>

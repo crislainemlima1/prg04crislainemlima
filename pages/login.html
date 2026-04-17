@@ -10,40 +10,42 @@
     <!-- Fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+         <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>FocusFlow</h1>
-        <p>Acesse sua conta</p>
-    </header>
+<body class="bg-info d-flex align-items-center justify-content-center vh-100">
 
-<main>
-    <form id="formLogin">
-        <label>E-mail</label>
-        <input type="email" id="email" required placeholder="Digite o seu e-mail"/>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <!-- Caixa de login -->
+        <div class="card shadow">
+          <div class="card-body">
+            <h1 class="h4 text-center mb-4">Login</h1>
+            
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+              </div>
+              
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+              </div>
+              
+              <button type="submit" class="btn btn-primary w-100">Entrar</button>
+              <button type="button" class="btn btn-outline-secondary w-100 mt-2">Esqueceu a senha?</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <label>Senha</label>
-        <input type="password" id="password" required minlength="6" placeholder="Digite sua senha"/>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <p id="erro" style="color: red; display: none;"> Preencha todos os campos corretamente.</p>
 
-       <button type="submit">Entrar</button>
-
-       <button type="button" onclick="alert('Em breve! Funcionalidade não disponível.')">Esqueceu a senha?</button>
-       
-    </form>
-</main>
-
- <script>
-        // Ao enviar o formulário, redireciona para o painel
-        document.getElementById("formLogin").addEventListener("submit", function(e) {
-            e.preventDefault(); // evita recarregar a página
-            window.location.href = "painel.html"; // redireciona para o painel
-        });
-    </script>
-
-    <footer>
-        <p>FocusFlow © 2026 — Programação Web</p>
-    </footer>
 </body>
 </html>
