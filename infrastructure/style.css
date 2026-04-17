@@ -298,5 +298,61 @@ tbody tr:nth-child(even) {
 
 
 
+/* Smartphones até 600px */
+@media (max-width: 600px) {
+  #menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #formLogin {
+    max-width: 100%; /* ocupa quase toda a tela no celular */
+    margin: 1rem;
+  }
+}
+
+/* Tablets entre 601px e 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  #formLogin {
+    max-width: 500px;
+  }
+}
+
+/* Desktops acima de 1025px */
+@media (min-width: 1025px) {
+  #menu ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  #formLogin {
+    max-width: 500px;
+  }
+}
+
+
+
 
 
